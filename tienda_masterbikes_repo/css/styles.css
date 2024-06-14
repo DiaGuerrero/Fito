@@ -1,0 +1,339 @@
+body {
+    display:flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; /* Cambiar la fuente del texto */
+    margin: 0; /* Eliminar los márgenes predeterminados */
+    padding: 0; /* Eliminar el relleno predeterminado */
+
+    background-color: #18af9b; /* Color de fondo */
+}
+
+
+
+
+.container{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+
+
+header{
+    background-color: #ffffff;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-shadow: 0 7px 8px -3px rgb(70, 102, 107);
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 99;
+    flex-direction: row;
+    display: inline-block;
+}
+
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+}
+.header-section div{
+    position: relative;
+}
+.header-section p{
+    position: absolute;
+    top: -24px;
+    right: -8px;
+    background-color: #fff;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: red;
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
+.logo{
+    width: 164px;
+    height: 84px;
+    cursor: pointer;
+}
+
+
+/*style to btn close*/
+p.close-btn{
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #e7e6e6;
+}
+p.author {
+    display: flex;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #eeeeee;
+}
+
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    color: #18af9b; /* Color del texto */
+}
+p{
+    color: #18af9b;
+}
+
+table {
+    width: 100%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Colapso de bordes */
+}
+
+th, td {
+    padding: 8px; /* Relleno de las celdas */
+    text-align: left; /* Alineación del texto */
+    border-bottom: 1px solid #ddd; /* Borde inferior */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo del encabezado */
+}
+
+/* Css para las imagenen del carrusel*/
+
+/* .carousel-item {
+    height: 65vh; 
+} */
+
+.carousel-item img {
+    width: 100%; /* Esto garantiza que la imagen sea tan ancha como su contenedor */
+    height: 100%; /* Esto garantiza que la imagen sea tan alta como su contenedor */
+    object-fit: cover; /* Esto recorta la imagen para cubrir el área disponible, podría recortar partes de la imagen */
+}
+
+
+
+/* Estilos para pantallas medianas */
+@media (min-width: 768px) {
+.custom-carousel .carousel-item {
+    height: 400px; /* Altura para dispositivos medianos */
+}
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+.custom-carousel .carousel-item {
+    height: 500px; /* Altura para dispositivos grandes */
+}
+}
+
+/* Estilos para pantallas muy grandes */
+@media (min-width: 1200px) {
+.custom-carousel .carousel-item {
+    height: 600px; /* Altura para dispositivos muy grandes */
+}
+}
+
+/* Css para las imagenen del logo */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Asegúrate de que la imagen del logo no sea demasiado grande */
+.img-logo {
+    max-height: 100px; /* Ajusta esto según el tamaño deseado */
+    width: auto;
+}
+
+
+/* Estilos para los enlaces del menú */
+
+.navbar-nav .nav-link {
+    transition: all 0.3s ease; /* Para un efecto suave al aplicar el subrayado */
+    border-bottom: 2px solid transparent; /* Prepara un borde transparente para evitar saltos visuales al hacer hover */
+}
+
+/* Estilos para el estado hover de los enlaces del menú */
+.navbar-nav .nav-link:hover {
+    border-bottom-color: rgb(62, 153, 148); /* Cambia el color del borde a verde al hacer hover */
+}
+
+textarea {
+    border-radius: 30px;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+
+}
+
+.container-fluid {
+    padding-top: 135px;
+    width: 80%; /* Ancho del contenedor principal */
+    margin: 20px auto; /* Centrar el contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    background: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%,
+        rgba(40,42,55,0.7)),
+        url(/images/bike.jpg);
+    background-size: cover;
+
+}
+
+.card-body {
+    color: #38393a;
+}
+
+.card-title {
+    color: #eff1f3;
+}
+
+/* ------------ Estos son nuevos para probarlos en el formulario ------------------- */
+/* Estilos para las etiquetas */
+label {
+    display: block; /* Coloca las etiquetas en una línea separada */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem; /* Espacio adicional entre los campos */
+    border: 1px solid #3b72b9;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el botón de enviar */
+button[type="submit"] {
+    background-color: #246077;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+button[type="submit"]:hover {
+    background-color: #18af9b;
+}
+
+.card-body {
+    background-color: #373b3b;
+}
+
+/* Estilos para los mensajes de alerta */
+.alert {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    color: #6b686a;
+}
+
+.alert-danger {
+    color: #5d619b;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+/* Estilos para el encabezado */
+h1 {
+    color: #18af9b; /* Color de texto */
+    font-size: 36px; /* Tamaño de fuente */
+    font-weight: bold; /* Estilo de fuente */
+    margin-bottom: 20px; /* Margen inferior para separar de otros elementos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+}
+
+  /* Estilos para el párrafo */
+p {
+    font-size: 18px; /* Tamaño de fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin-bottom: 30px; /* Margen inferior para separar de otros elementos */
+}
+
+h2 {
+    color: #18af9b;
+}
+
+label {
+    color: #18af9b;
+}
+
+body {
+    background-color: #f8f9fa; /* Color de fondo */
+    color: #b9118f; /* Color de texto principal */
+    padding-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para la pagina staff */
+
+body {
+    background-color: #f8f9fa; /* Color de fondo */
+    color: #bdb0b0; /* Color de texto principal */
+    padding-top: 20px; /* Espaciado superior */
+}
+
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+h1 {
+    color: #e6eaec; /* Color de texto */
+    font-size: 36px; /* Tamaño de fuente */
+    font-weight: bold; /* Estilo de fuente */
+    text-align: center; /* Centrar el encabezado */
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+    margin: 0 auto; /* Centrar la tabla */
+    background-color: #dbd0d8; /* Color de fondo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+th,
+td {
+    padding: 12px 15px; /* Relleno de celda */
+    text-align: left; /* Alineación de texto */
+    border-bottom: 1px solid #db0abf; /* Borde inferior */
+}
+
+th {
+    background-color: #f2f2f2; /* Color de fondo de encabezado */
+    font-weight: bold; /* Peso de fuente */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo de filas pares */
+}
